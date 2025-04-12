@@ -14,4 +14,6 @@ Un centro de salud quiere digitalizar la gestión de turnos médicos para evitar
 
 ## Diagramas y Diseños
 
-* [Anexos](anexos.md)
+* [Anexos](md/anexos.md)
+* [Diagramas UML](md/diagramasUML.md)
+* [Herramientas Agile](md/herramientas_agile.md)
