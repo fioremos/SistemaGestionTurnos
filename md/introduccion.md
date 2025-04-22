@@ -153,5 +153,5 @@ Oculta detalles complejos y solo expone lo necesario para el uso de un objeto.
 ## Boceto inicial del diseño de clases
 La clase _Usuario_ es una clase padre que se divide en 3 subclases, _Medico_, _Paciente_ y _Administrador_. De estas tres, cada una tiene distintos atributos y metodos que son tareas que puede desempeñar cada usuario.  
 La clase principal o con "mas protagonismo" es la clase _Turno_ que es la que tiene todos los metodos para que los usuarios gestionen los turnos correspondientes dependiendo los permisos, esta clase es la ecargada de registrar, confirmar, cancelar, modificar un turno y tiene todos los datos del mismo, el medico y el paciente asociados, la fecha y hora del turno y la duracion de forma que no se superpongan turnos, tambien esta el estado (cancelado, confirmado, modificado). De esta clase, depende tambien la clase _Agenda_ que tiene una lista de turnos historicos y turnos futuros agendados, y el metodo cambiarDia, que lo que haria seria agarrar todos los turnos que pasaron en un dia y pasarlos de futuros a historicos. Por ultimo esta la clase _Notificaciones_ que guarda los datos de una notificacion (a quien enviarsela, la razon de la notificacion, etc. ) y lo que hace es notificar al paciente.
-![](imagenes/image.png)
+![](../imagenes/BocetoInicial.png)
 
