@@ -101,7 +101,7 @@ Oculta detalles complejos y solo expone lo necesario para el uso de un objeto.
     - Descripción breve: Un turno es cancelado.
     - Flujo principal de eventos:
         1. El usuario inicia sesión en el sistema.
-        2. Accede a la sección "Mis turnos" sie s Paciente o "Agenda" si es Administrativo.
+        2. Accede a la sección "Mis turnos" si es Paciente o "Agenda" si es Administrativo.
         3. Visualiza la lista de turnos pendientes o confirmados.
         4. Selecciona el turno que desea cancelar.
         5. Hace clic en "Cancelar turno".
