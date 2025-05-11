@@ -20,8 +20,9 @@ Esto generaba un fuerte acoplamiento que dificultaba:
 ### Solución aplicada
 
 Se creó una interfaz `RepositorioTurnos`, que define los métodos necesarios para interactuar con los turnos (guardar, buscar, eliminar, etc.).
+En la implementación del principio DIP, `GestorDeTurnos` ya no depende directamente de `RepositorioTurnosDB`, sino que depende de una interfaz `IRepositorioTurnos`. Esto permite invertir la dirección de la dependencia y facilita la extensión, el testeo y el mantenimiento del sistema
 
-* `GestorDeTurnos` depende ahora de `RepositorioTurnos` y no de una implementación concreta.
+* `GestorDeTurnos` depende ahora de `IRepositorioTurnos` y no de una implementación concreta.
 * Implementaciones como `RepositorioTurnosDB` implementan esta interfaz.
 
 ## Diagrama UML

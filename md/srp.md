@@ -25,10 +25,11 @@ En la vida real. un recepcionista que se encarga de agendar turnos, avisar a los
 ### Solución aplicada
 
 Aplico SRP dividiendo responsabilidades en clases especializadas:
+En el diseño actualizado, ValidadorTurnos actúa como un servicio independiente con responsabilidad exclusiva de validar reglas de negocio (como disponibilidad de horarios), mientras que GestorTurnos funciona como un coordinador que orquesta el flujo de creación del turno, apoyándose en otras clases. No existe herencia entre ellas, sino relaciones de uso (dependencia).
 
 * `Turno`: almacena los datos del turno (fecha, hora, paciente, médico).
 * `ValidadorTurnos`: valida disponibilidad de horarios para un nuevo turno.
-* `GestorTurnos`: orquesta la creación, validación y almacenamiento del turno.
+* `GestorTurnos`:  clase tipo "orquestador" o "servicio de aplicación" que coordina la creación del turno.
 
 De esta forma, cada clase tiene una sola razón para cambiar.
 
