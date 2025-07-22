@@ -1,4 +1,4 @@
- # Herencia
+ # Polimorfismo
 
 El polimorfismo permite que un mismo mensaje pueda ser interpretado y ejecutado de distintas maneras según el objeto concreto que lo recibe. Esto se logra mediante interfaces o clases base, lo que permite intercambiar objetos en tiempo de ejecución sin modificar el código cliente.
 
